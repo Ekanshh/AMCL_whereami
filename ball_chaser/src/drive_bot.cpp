@@ -1,12 +1,12 @@
 #include "ros/ros.h"
 #include <std_msgs/Float64.h>
 #include <geometry_msgs/Twist.h>
-#include "my_robot/DriveToTarget.h"
+#include "ball_chaser/DriveToTarget.h"
 
 ros::Publisher motor_command_publisher;
 
-bool handle_move_request(my_robot::DriveToTarget::Request& req,
-    my_robot::DriveToTarget::Response& res)
+bool handle_move_request(ball_chaser::DriveToTarget::Request& req,
+    ball_chaser::DriveToTarget::Response& res)
 {
     //Print Service Request Call
     //ROS_INFO("DriveToTarget Request received - x:%1.2f, z:%1.2f", (float) req.linear_x, (float) req.angular_z);
