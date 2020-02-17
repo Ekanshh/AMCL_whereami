@@ -47,7 +47,9 @@ The tree structure of the directories and files is as follows:
   $ roslaunch my_robot world.launch 
   $ roslaunch ball_chaser ball_chaser.launch
   ```
-4. For RVIZ Integration: 
+4. Please note that the white ball is intentionally placed behind the robot. Place the white ball in front the robot to see the action. 
+
+5. For RVIZ Integration: 
 
    `Select: Global Options-> Fixed Frame-> Odom.`
    
@@ -56,6 +58,6 @@ The tree structure of the directories and files is as follows:
    `Add Camera. Then Select Image Topic: /camera/rgb/image_raw.`
  
    
-   `
+ 
    
  
