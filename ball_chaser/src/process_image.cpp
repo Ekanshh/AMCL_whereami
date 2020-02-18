@@ -69,17 +69,17 @@ void process_image_callback(const sensor_msgs::Image img)
     if ( move_left > move_fwd && move_left > move_right && move_left < reached_target)
     {   
         ROS_INFO("MOVING LEFTSIDE");
-        drive_robot(0.2,0.2);
+        drive_robot(0.05,0.3);
     }
 
     else if ( move_fwd > move_left && move_fwd > move_right && move_fwd < reached_target) 
     {   ROS_INFO("MOVING FORWARD");
-        drive_robot(0.2,0.0);
+        drive_robot(0.3,0.0);
     }
 
     else if ( move_right > move_left && move_right > move_fwd && move_right < reached_target)
     {   ROS_INFO("MOVING RIGHTSIDE");
-        drive_robot(0.2,-0.2);
+        drive_robot(0.05,-0.3);
     }
 
     else
