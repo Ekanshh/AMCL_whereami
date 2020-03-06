@@ -1,37 +1,4 @@
 
-
-This repo has reference to the project **Go Chase it** of the [Robotics Software Engineer Nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209) program offered by [Udacity](https://www.udacity.com/) and contains a mobile robot model that chases a white colored ball, simulated in Gazebo and Rviz.
-
-## Description
-
-The tree structure of the directories and files is as follows:
-                                      
-                                      ├── ball_chaser
-                                      │   ├── CMakeLists.txt
-                                      │   ├── launch
-                                      │   │   └── ball_chaser.launch
-                                      │   ├── package.xml
-                                      │   ├── src
-                                      │   │   ├── drive_bot.cpp
-                                      │   │   └── process_image.cpp
-                                      │   └── srv
-                                      │       └── DriveToTarget.srv
-                                      ├── LICENSE
-                                      ├── my_robot
-                                      │   ├── CMakeLists.txt
-                                      │   ├── launch
-                                      │   │   ├── robot_description.launch
-                                      │   │   └── world.launch
-                                      │   ├── meshes
-                                      │   │   └── hokuyo.dae
-                                      │   ├── package.xml
-                                      │   ├── src
-                                      │   ├── urdf
-                                      │   │   └── my_robot.urdf
-                                      │   └── world
-                                      │       ├── empty.world
-                                      │       └── test.world
-                                      └── README.md
                                       
 ## How-To-Build-The-Project
 
@@ -44,18 +11,17 @@ The tree structure of the directories and files is as follows:
   ```
 3. Execute the project using the following commands:
   ```
-  $ roslaunch my_robot world.launch 
-  $ roslaunch ball_chaser ball_chaser.launch
+  $ roslaunch src/pkg_1/launch/world.launch
+  $ roslaunch src/pkg_2/launch/amcl.launch
   ```
-4. Please note that the white ball is intentionally placed behind the robot. Place the white ball in front the robot to see the action. 
 
 5. For RVIZ Integration: 
 
-   `Select: Global Options-> Fixed Frame-> Odom.`
+   `Select: Global Options-> Fixed Frame-> Map`
    
-   `Add Robot Model.`
+   `Add Robot Model, Camera, and Laser Scanner`
 
-   `Add Camera. Then Select Image Topic: /camera/rgb/image_raw.`
+   `Add Map. Then select the topic /Map`
  
    
  
