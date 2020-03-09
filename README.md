@@ -76,9 +76,11 @@ The tree structure of the directories and files is as follows:
 ## Screenshots-Of-The-Project
 
 ### At Origin
-<img src='images/robot.png' height=500 />
+
+<img src="Images/robot.png" height=500 >
 
 ### After giving 2D Nav Goal 
-<img src='images/robot_2.png' height=500 />
+
+<img src="Images/robot_2.png" height=500 >
    
  
