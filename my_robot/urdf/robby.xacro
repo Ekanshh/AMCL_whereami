@@ -165,7 +165,7 @@
     </collision>
     <visual name='visual'>
       <geometry>
-        <mesh filename= "package://pkg_1/meshes/hokuyo.dae" />
+        <mesh filename= "package://my_robot/meshes/hokuyo.dae" />
       </geometry>
     </visual>
   </link>
