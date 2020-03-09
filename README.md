@@ -60,13 +60,24 @@ The tree structure of the directories and files is as follows:
 5. For RVIZ Integration: 
 
    `Select: Global Options-> Fixed Frame-> Map`
+
    `Add Robot Model.`
+   
    `Add Camera. Then Select Image Topic: /camera/rgb/image_raw.`
+   
    `Add LaserScan. Then Select Image Topic: /scan.`
+   
    `Add Maps. Then Select Image Topic: /map. Check other maps such as /move_base/local_costmap/costmap /move_base/global_costmap/costmap`
+   
    `Add PoseArrow. Then Select Topic: /pointcloud.`
 
    
- 
+## Screenshots-Of-The-Project
+
+### At Origin
+<img src='images/robot.png' height=500 />
+
+### After giving 2D Nav Goal 
+<img src='images/robot_2.png' height=500 />
    
  
