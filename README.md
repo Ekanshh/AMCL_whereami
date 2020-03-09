@@ -5,7 +5,7 @@ This repo has reference to the project **Where Am I** of the [Robotics Software 
 ## Description
 
 The tree structure of the directories and files is as follows:
-                                                      .
+```                                                      
                                                       ├── LICENSE
                                                       ├── myamcl
                                                       │   ├── CMakeLists.txt
@@ -40,9 +40,10 @@ The tree structure of the directories and files is as follows:
                                                       │   └── world
                                                       │       ├── buildmyworld
                                                       │       └── empty.world
-                                                      └── README.md
+                                                      └── README.md 
+   
 
-                                      
+  ```                                    
 ## How-To-Build-The-Project
 
 1. Clone this repository into the workspace.
