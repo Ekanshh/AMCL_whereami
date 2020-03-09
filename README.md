@@ -72,6 +72,8 @@ The tree structure of the directories and files is as follows:
    
    `Add PoseArrow. Then Select Topic: /pointcloud.`
 
+6. Additionally, move commands can be sent to robot through the teleop package. To start teleop, run the following command in the terminal: ` teleop_twist_keyboard teleop_twist_keyboard.py `
+
    
 ## Screenshots-Of-The-Project
 
